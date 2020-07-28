@@ -1,0 +1,309 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+:root{
+  --main-bg-color: #d4d4d4;
+  --main-txt-color: #1a1a1a;
+  --txt-color: #b1aeae;
+}
+body{
+  width: 100vp;
+  min-height: 310vh;
+  position: relative;
+  overflow-x: hidden;
+  font-family: 'Radio Grotesk', Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(#b1aeae, #ffffff);
+  display: flex;
+}
+@media only screen and (max-width: 380px){
+  body{
+    width: 100vp;
+    min-height: 380vh;
+    position: relative;
+    overflow-x: hidden;
+    font-family: 'Radio Grotesk', Arial, Helvetica, sans-serif;
+    background-color: #b1aeae;
+    display: flex;
+  }
+}
+
+.slanted{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5%;
+  background-color: var(--main-txt-color);
+  z-index: 1;
+}
+.slanted:after{
+  position: absolute;
+  width: 100%;
+  height: 350%;
+  content:'';
+  background: inherit;
+  z-index: -2;
+  top: -3em;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform-origin: top right;
+  transform: skewY(-3deg);
+}
+@media only screen and (max-width: 380px){
+.slanted:after{
+  height: 440%;
+  }
+}
+h1{
+  position: fixed;
+  top: 0.7em;
+  left: 1em;
+  letter-spacing: 1.2px;
+  font-size: 250%;
+  line-height: 0.8;
+  color: var(--txt-color);
+  font-weight: 500;
+}
+@media only screen and (max-width: 380px){
+  h1{
+    font-size: 150%;
+  }
+}
+h4{
+  position: fixed;
+  top: 10%;
+  left: 2.8%;
+  letter-spacing: 1.2px;
+  font-size: 100%;
+  line-height: 1.5;
+  color: var(--txt-color);
+  font-weight: 500;
+}
+@media only screen and (max-width: 380px){
+  h4{
+    font-size: 90%;
+    top: 8%;
+    left: 6.5%;
+  }
+}
+#info{
+  position: fixed;
+  top: 28%;
+  left: 2%;
+  max-width: 15%;
+}
+button{
+  background-color: var(--main-txt-color);
+  border: 0 transparent;
+  padding: 10px 60px;
+  display: flex;
+  width: 14em;
+  font-size: 1.08em;
+  margin-right: 4%;
+  cursor: URL(images/pointer.svg), auto;
+  color: var(--txt-color);
+  text-align: center;
+  box-shadow: 0px 3px 6px #8e8f8eea;
+}
+@media only screen and (max-width: 380px){
+  button{
+    padding: 14px 130px;
+    display: flex;
+    width: 24em;
+    height: 3em;
+    font-size: 1.08em;
+    margin-left: -15%;
+    margin-top: 762%;
+  }
+}
+button:hover{
+  opacity: 70%;
+}
+button:focus {
+  outline:0;
+  border: none;
+}
+.menu {
+  transform: translateX(-100%);
+  transition: transform 400ms ease-in;
+  background-color: transparent;
+  z-index: 9;
+}
+.menu-visible {
+  transform: translateX(0%);
+}
+ul{
+  list-style: none;
+  color: var(--main-txt-color);
+  font-size: .9em;
+  text-transform: uppercase;
+  letter-spacing: .6px;
+  margin-top: 1em;
+  margin-left: -1.65em;
+  line-height: 27pt;
+}
+#wrapper{
+  margin: 14.8% auto auto 22.5%;
+  display: flex;
+  max-width: 60%;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 380px){
+  #wrapper{
+    margin: 35% 0 0 3%;
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+}
+a{
+  color: var(--main-txt-color);
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+.card {
+  width: 13em;
+  height: 13em;
+  margin-right: 4%;
+  margin-bottom: 4%;
+  box-shadow: 0px 3px 6px #8e8f8eea;
+}
+@media only screen and (max-width: 380px){
+  .card {
+    width: 8em;
+    height: 8em;
+    margin: 3% 3% 0 3%;
+    box-shadow: 0px 3px 6px #8e8f8eea;
+  }
+}
+.overlay {
+  height: 100%;
+  width: 100%;
+  background-color: #c9c7c7;
+  opacity: 0;
+}
+.card:hover .overlay {
+  opacity: 1;
+  padding-top: 72%;
+  padding-left: 8%;
+}
+.card h2 {
+  font-size: 120%;
+  color: var(--main-txt-color);
+  font-weight: lighter;
+}  
+.card p{
+  font-size: 70%;
+  color: var(--main-txt-color);
+  font-weight: lighter;
+  margin-top: 2%;
+}
+.portfolio{
+  background-image: url(images/portfolio.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.card-ex{
+  background-image: url(images/cards.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.flexbox{
+  background-image: url(images/flexbox.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.positioning{
+  background-image: url(images/positioning.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.swiss-poster{
+  background-image: url(images/swissposter.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.grid-layout{
+  background-image: url(images/gridlayout.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.examone{
+  background-image: url(images/examone.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.gridareas{
+  background-image: url(images/gridareas.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.mediaqueries{
+  background-image: url(images/mediaq.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.gridcards{
+  background-image: url(images/gridcards.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.trans{
+  background-image: url(images/button.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.examtwo{
+  background-image: url(images/examtwom.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.examtwo{
+  background-image: url(images/examtwom.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.css-animations{
+  background-image: url(images/animationfun.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.gsap-card{
+  background-image: url(images/gsapanimations.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.glaser{
+  background-image: url(images/glaser.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.wallpatterns{
+  background-image: url(images/wallpatterns.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.selfart{
+  background-image: url(images/selfart.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.infodesign{
+  background-image: url(images/infodesign.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.infodesigntwo{
+  background-image: url(images/infodesigntwo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.expectations{
+  background-image: url(images/expectations.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
