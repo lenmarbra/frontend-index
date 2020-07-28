@@ -187,7 +187,7 @@ a{
 }
 .card:hover .overlay {
   opacity: 1;
-  padding-top: 72%;
+  padding-top: 8%;
   padding-left: 8%;
 }
 .card h2 {
