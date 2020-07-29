@@ -260,7 +260,12 @@ a{
   background-size: cover;
   background-repeat: no-repeat;
 }
-.trans{
+.trans-box{
+  background-image: url(images/box.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.trans-button{
   background-image: url(images/button.png);
   background-size: cover;
   background-repeat: no-repeat;
