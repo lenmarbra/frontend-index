@@ -225,6 +225,11 @@ a{
   background-size: cover;
   background-repeat: no-repeat;
 }
+.layout{
+  background-image: url(images/layout.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .swiss-poster{
   background-image: url(images/swissposter.png);
   background-size: cover;
