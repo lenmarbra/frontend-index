@@ -9,7 +9,7 @@
 }
 body{
   width: 100vp;
-  min-height: 310vh;
+  min-height: 305vh;
   position: relative;
   overflow-x: hidden;
   font-family: 'Radio Grotesk', Arial, Helvetica, sans-serif;
@@ -186,7 +186,7 @@ a{
 .overlay {
   height: 100%;
   width: 100%;
-  background-color: #c9c7c7;
+  background-color: #d3d1d1;
   opacity: 0;
 }
 .card:hover .overlay {
