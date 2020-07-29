@@ -9,7 +9,7 @@
 }
 body{
   width: 100vp;
-  min-height: 305vh;
+  min-height: 290vh;
   position: relative;
   overflow-x: hidden;
   font-family: 'Radio Grotesk', Arial, Helvetica, sans-serif;
@@ -149,7 +149,7 @@ li{
   transform: rotateX(0deg);
 }
 #wrapper{
-  margin: 14.8% auto auto 22.5%;
+  margin: 16% auto auto 22.5%;
   display: flex;
   max-width: 60%;
   flex-wrap: wrap;
