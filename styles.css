@@ -126,13 +126,8 @@ button:focus {
   border: none;
 }
 .menu {
-  transform: translateX(-100%);
-  transition: transform 400ms ease-in;
   background-color: transparent;
   z-index: 9;
-}
-.menu-visible {
-  transform: translateX(0%);
 }
 ul{
   list-style: none;
@@ -143,6 +138,15 @@ ul{
   margin-top: 1em;
   margin-left: -1.65em;
   line-height: 27pt;
+}
+li{
+  transform-style: preserve-3d;
+  transform: rotateX(90deg);
+  transition: transform 400ms ease-in; */
+}
+.menu-visible li{
+  transform-style: none;
+  transform: rotateX(0deg);
 }
 #wrapper{
   margin: 14.8% auto auto 22.5%;
