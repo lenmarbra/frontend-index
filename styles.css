@@ -28,7 +28,7 @@ body{
   }
 }
 
-.slanted{
+nav{
   position: fixed;
   top: 0;
   left: 0;
@@ -37,7 +37,7 @@ body{
   background-color: var(--main-txt-color);
   z-index: 1;
 }
-.slanted:after{
+nav:after{
   position: absolute;
   width: 100%;
   height: 350%;
@@ -52,7 +52,7 @@ body{
   transform: skewY(-3deg);
 }
 @media only screen and (max-width: 380px){
-.slanted:after{
+nav:after{
   height: 440%;
   }
 }
@@ -142,7 +142,7 @@ ul{
 li{
   transform-style: preserve-3d;
   transform: rotateX(90deg);
-  transition: transform 400ms ease-in; */
+  transition: transform 400ms ease-in; 
 }
 .menu-visible li{
   transform-style: none;
