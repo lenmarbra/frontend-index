@@ -91,7 +91,7 @@ h4{
 #info{
   position: fixed;
   top: 26%;
-  left: 2%;
+  left: 2.3%;
   max-width: 15%;
 }
 button{
@@ -101,7 +101,7 @@ button{
   display: flex;
   width: 14em;
   font-size: 1.08em;
-  margin-right: 4%;
+  margin-right: -4%;
   cursor: URL(images/pointer.svg), auto;
   color: var(--txt-color);
   text-align: center;
@@ -136,7 +136,7 @@ ul{
   text-transform: uppercase;
   letter-spacing: .6px;
   margin-top: 1em;
-  margin-left: -1.65em;
+  margin-left: -2.2em;
   line-height: 27pt;
 }
 li{
